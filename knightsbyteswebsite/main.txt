@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/Knightsbytes/Knights-Bytes-main/main/knightsbyteswebsite/main.html
+main.html
