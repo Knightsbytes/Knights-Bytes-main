@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knightsbytes - Start page</title>
+  <link rel="icon" type="image/png" href="pages/assets/knightsbytes.png">
+  <style>
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #000;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      border-radius: 25px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("pages/assets/bg.jpg");
+      background-color: #000;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 180px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .button:hover {
+      background-color: #fff;
+      color: #000;
+      box-shadow: 0 0 15px rgba(0, 255, 0, 1),
+                  0 0 30px rgba(0, 255, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <h1>Knightsbytes</h1>
+  <div>
+    <a id="start-button" class="button" target="_blank">Start</a>
+  </div>
+
+  <script>
+    fetch("https://raw.githubusercontent.com/Knightsbytes/Knights-Bytes-main/main/knightsbyteswebsite/main.txt")
+      .then(response => response.text())
+      .then(url => {
+        document.getElementById("start-button").href = url.trim();
+      })
+      .catch(error => console.error("Error loading button link:", error));
+  </script>
+
+</body>
+</html>
