@@ -14,3 +14,6 @@ rules
 - obey the school rules at all times
 - NO MALWARE!!!
 - getting around the restrictions is fine as long as the IT team (currently leaded by DR. Ryans) is ok with it
+------------------------
+TOS:
+- Don't share without the owners permission!
