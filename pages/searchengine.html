@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knightsbytes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #gamesContainer {
+      width: 100%;
+      height: 100vh;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="gamesContainer"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var games = [
+            { name: "example", url: "https://www.meilisearch.com" } // Replace with any site that allows embedding
+        ];
+
+        var container = document.getElementById("gamesContainer");
+
+        if (games.length > 0) {
+            var game = games[0];
+            container.innerHTML = `<iframe src="${game.url}" allowfullscreen></iframe>`;
+        }
+    });
+  </script>
+
+</body>
+</html>
