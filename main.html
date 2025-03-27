@@ -34,7 +34,7 @@
     }
     h1 {
       margin-top: 100px;
-      font-size: 24px;
+      font-size: 60px;
       font-weight: 700;
     }
     .button:hover {
@@ -54,7 +54,7 @@
   </style>
 </head>
 <body>
-  <h1>Knightsbytes</h1>
+  <h1 sizes="any" ><u>Knightsbytes</u></h1>
 
   <div>
     <a href="pages/documentation.html" class="button" target="_blank">Documentation</a>
@@ -222,7 +222,16 @@
       { name: "Wordle", url: "https://wordleunlimited.org/" },
       { name: "Worldguessr", url: "https://www.worldguessr.com/" },
       { name: "Tomb of the mask", url: "https://mountain658.github.io/g/tombofthemask/index.html" },
-      {name:"Racing limits", url:"https://crazygames.cdn.start.gg/9n7hl5s06zk0/v4/index.html?msstart_sdk_init=eyJwYXJlbnRPcmlnaW4iOiJodHRwczovL3d3dy5tc24uY29tIiwiY2xpZW50SWQiOiIyM0YxODkwNkVDQ0U2OEQxM0JDQjlDQkFFRDM1Njk2NyIsImxvY2FsZSI6ImVuLXVzIiwiZW50cnlQb2ludElkIjoiIn0"}
+      {name:"Racing limits", url:"https://crazygames.cdn.start.gg/9n7hl5s06zk0/v4/index.html?msstart_sdk_init=eyJwYXJlbnRPcmlnaW4iOiJodHRwczovL3d3dy5tc24uY29tIiwiY2xpZW50SWQiOiIyM0YxODkwNkVDQ0U2OEQxM0JDQjlDQkFFRDM1Njk2NyIsImxvY2FsZSI6ImVuLXVzIiwiZW50cnlQb2ludElkIjoiIn0"},
+      {name:"Idle clicker rpg", url:"https://games.crazygames.com/en_US/rpg-idle-clicker-uzz/index.html?v=1.327"},
+      {name:"Knock and run: 100 doors esacape!", url:"https://games.crazygames.com/en_US/knock-and-run/index.html?v=1.327"},
+      {name:"Ragdoll show",url:"https://games.crazygames.com/en_US/ragdoll-break/index.html?v=1.327"},
+      {name:"Cookie clicker",url:"https://orteil.dashnet.org/cookieclicker/"},
+      { name:"Idle saga",url:"https://games.crazygames.com/en_US/idle-saga/index.html?v=1.327"},
+      {name:"Empire clicker",url:"https://games.crazygames.com/en_US/empire-clicker/index.html?v=1.327"},
+      {name:"One line",url:"https://games.crazygames.com/en_US/oneline/index.html?v=1.327"},
+      {name:"Crazy flips 3d",url:"https://games.crazygames.com/en_US/crazy-flips-3d/index.html?v=1.327"},
+      {name:"Thief puzzles",url:"https://games.crazygames.com/en_US/thief-puzzle/index.html?v=1.327"}
 
     ];
 
@@ -268,7 +277,7 @@
 
         // Add error handling
         frame.onerror = function() {
-          alert("Error loading the page. Please check the URL and try again.");
+          alert("Error loading the game. Please check the URL and try again.");
           location.reload(); // Reload the page if the game fails to load
         };
       } catch (error) {
