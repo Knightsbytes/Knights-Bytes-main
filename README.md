@@ -17,3 +17,6 @@ rules
 ------------------------
 TOS:
 - Don't share without the owners permission!
+- Don't use to pirate things
+- Obey the law
+- Obey the TOS
